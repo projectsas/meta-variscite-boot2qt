@@ -75,4 +75,11 @@
            remote="boundary"
            revision="d1a51cff1d295f60aa84be99adafb6fbab26e6d6"
            path="sources/meta-boundary"/>
+
+  <!-- Variscite -->
+  <remote fetch="git://github.com/varigit" name="variscite"/>
+  <project name="meta-variscite-imx"
+           remote="variscite"
+           revision="9e1d70efec4e8d29a802df00364d53dd9ddff0f6"
+           path="sources/meta-variscite-imx"/>
 </manifest>

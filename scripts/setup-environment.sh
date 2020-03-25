@@ -62,9 +62,6 @@ if [ ! -e ${PWD}/${BUILDDIRECTORY} ]; then
     nitrogen*)
       LAYERSCONF="bblayers.conf.boundary.sample"
       ;;
-    imx*)
-      LAYERSCONF="bblayers.conf.fsl.sample"
-      ;;
     raspberrypi*)
       LAYERSCONF="bblayers.conf.rpi.sample"
       ;;
@@ -73,6 +70,12 @@ if [ ! -e ${PWD}/${BUILDDIRECTORY} ]; then
       ;;
     jetson-*)
       LAYERSCONF="bblayers.conf.jetson.sample"
+      ;;
+    var-som-mx6|imx6ul-var-dart|imx7-var-som)
+      LAYERSCONF="bblayers.conf.variscite.sample"
+      ;;
+    imx*)
+      LAYERSCONF="bblayers.conf.fsl.sample"
       ;;
     *)
       LAYERSCONF="bblayers.conf.sample"
