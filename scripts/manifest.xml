@@ -31,12 +31,21 @@
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="218e7c48e6d7b95f61a9991c0d3c3bf4b38a34c4"
+           revision="0be39721cea6e04c589a419f4bb07fabd0da6704"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
            revision="aea3771baa77e74762358ceb673d407e36637e5f"
            path="sources/meta-freescale-3rdparty"/>
+  <project name="meta-freescale-distro"
+           remote="freescale"
+           revision="ca27d12e4964d1336e662bcc60184bbff526c857"
+           path="sources/meta-freescale-distro"/>
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <project name="meta-imx"
+           remote="CAF"
+           revision="435f5e984856a943986491fddd061734a0b9eba5"
+           path="sources/meta-imx" />
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
