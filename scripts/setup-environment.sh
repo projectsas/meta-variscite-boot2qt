@@ -59,6 +59,9 @@ if [ ! -e ${PWD}/${BUILDDIRECTORY} ]; then
     apalis-*|colibri-*)
       LAYERSCONF="bblayers.conf.toradex.sample"
       ;;
+    var-som-mx6|imx6ul-var-dart|imx7-var-som)
+      LAYERSCONF="bblayers.conf.variscite.sample"
+      ;;
     imx*)
       LAYERSCONF="bblayers.conf.fsl.sample"
       ;;
